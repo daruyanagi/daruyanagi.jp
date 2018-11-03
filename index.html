@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,11 +7,11 @@
     <title>daruyanagi.jp</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
 
     <style>
-        header
-        {
+        header {
             position: relative;
             height: 250px;
             background: no-repeat center url(https://pbs.twimg.com/profile_banners/11588872/1433835614/1500x500);
@@ -18,25 +19,22 @@
             margin-bottom: 2em;
         }
 
-        header div.container
-        {
+        header div.container {
             color: white;
             padding-top: 2em;
         }
 
-        .google-map 
-        {
+        .google-map {
             position: relative;
             padding-bottom: 56.25%;
             padding-top: 30px;
             height: 0;
             overflow: hidden;
         }
-        
+
         .google-map iframe,
         .google-map object,
-        .google-map embed 
-        {
+        .google-map embed {
             position: absolute;
             top: 0;
             left: 0;
@@ -44,76 +42,119 @@
             height: 100%;
         }
 
-        footer
-        {
+        footer {
             margin: 2em 0;
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
             <h1>daruyanagi.jp</h1>
 
-            <p>YANAGI Hidetoshi (a.k.a. daruyanagi) is a freelance writer for windows software.</p>                    
+            <p>YANAGI Hidetoshi (a.k.a. daruyanagi) is a freelance writer for windows software.</p>
         </div>
     </header>
 
     <div class="container">
 
-        <h2>works</h2>
-            <dl>
-                <dt>blog</dt>
-                <dd><a href="https://blog.daruyanagi.jp/">https://blog.daruyanagi.jp/</a></dd>
-                <dt>Hateboo (Windows Store App)</dt>
-                <dd><a href="https://www.microsoft.com/ja-jp/p/hateboo/9nblggh4n948">https://www.microsoft.com/ja-jp/p/hateboo/9nblggh4n948</a></dd>
-                <dt>Clipper (Windows Store App)</dt>
-                <dd><a href="https://www.microsoft.com/ja-jp/p/clipper/9wzdncrdf8kz">https://www.microsoft.com/ja-jp/p/clipper/9wzdncrdf8kz</a></dd>
-                <dt>Tonjiru (Windows Store App/WPF)</dt>
-                <dd><a href="https://www.microsoft.com/ja-jp/p/tonjiru/9n2qr45vcmp1">https://www.microsoft.com/ja-jp/p/tonjiru/9n2qr45vcmp1</a></dd>
-            </dl>
-        
-        <h2>social</h2>
-            <dl>
-                <dt>twitter</dt>
-                <dd><a href="https://twitter.com/YanagiHidetoshi">https://twitter.com/YanagiHidetoshi</a></dd>
-                <dt>twitter</dt>
-                <dd><a href="https://twitter.com/daruyanagi">https://twitter.com/daruyanagi</a></dd>
-                <dt>facebook</dt>
-                <dd><a href="https://facebook.com/daruyanagi">https://facebook.com/daruyanagi</a></dd>
-                <dt>github</dt>
-                <dd><a href="https://github.com/daruyanagi">https://github.com/daruyanagi</a></dd>
-                <dt>hatena</dt>
-                <dd><a href="http://profile.hatena.ne.jp/daruyanagi/">http://profile.hatena.ne.jp/daruyanagi/</a></dd>
-            </dl>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <h2>Works</h2>
 
-        <h2>contact</h2>
-  
-        <address>
-            <strong>Mail</strong><br>
-            <a href="mailto:mail@daruyanagi.jp">mail@daruyanagi.jp</a>
-        </address>
+                    <dl>
+                        <dt>Hateboo (Windows Store App)</dt>
+                        <dd><a href="https://www.microsoft.com/ja-jp/p/hateboo/9nblggh4n948">https://www.microsoft.com/ja-jp/p/hateboo/9nblggh4n948</a></dd>
+                        <dt>Clipper (Windows Store App)</dt>
+                        <dd><a href="https://www.microsoft.com/ja-jp/p/clipper/9wzdncrdf8kz">https://www.microsoft.com/ja-jp/p/clipper/9wzdncrdf8kz</a></dd>
+                        <dt>Tonjiru (Windows Store App/WPF)</dt>
+                        <dd><a href="https://www.microsoft.com/ja-jp/p/tonjiru/9n2qr45vcmp1">https://www.microsoft.com/ja-jp/p/tonjiru/9n2qr45vcmp1</a></dd>
+                    </dl>
+                </div>
+                <div class="col-12 col-md-4">
+                        <h2>Blog</h2>
+                        <dl>
+                                <dt>Hatenablog (だるろぐ)</dt>
+                                <dd><a href="https://blog.daruyanagi.jp/">https://blog.daruyanagi.jp/</a></dd>
+                            </dl>
 
-        <address>
-            <strong>YANAGI Hidetoshi</strong><br>
-            Gran-R Yamagoe 706<br>
-            1-7-27 Yamagoe, Matshuyama City, Ehime, Japan<br>
-            791-8013<br>
-        </address>
+                        <form action="https://blog.daruyanagi.jp/search">
+                            <div class="form-group">
+                                <label for="ｑ">ブログ検索</label>
+                                <input type="search" class="form-control" id="ｑ" name="q" placeholder="キーワード">
+                            </div>
+                            <button type="submit" class="btn btn-primary">検索</button>
+                        </form>
+                        <p>
+                            Subscribe：
+                            <a href='https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fblog.daruyanagi.jp%2Ffeed'  target='blank'>
+                                <img height="32" src='http://s3.feedly.com/img/follows/feedly-follow-logo-green_2x.png' alt='follow us in feedly'>
+                            </a>
+                            <a href="https://blog.daruyanagi.jp/feed">
+                                <img height="24" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Generic_Feed-icon.svg/32px-Generic_Feed-icon.svg.png">
+                            </a>
+                        </p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h2>Contact</h2>
 
-        <div class="google-map">          
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1656.6141014346226!2d132.75629468695251!3d33.85800927255412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354fe5bb48bb189f%3A0xfdae3f41e0b39f7f!2z44CSNzkxLTgwMTMg5oSb5aqb55yM5p2-5bGx5biC5bGx6LaK77yR5LiB55uu77yX4oiS77yS77yX!5e0!3m2!1sja!2sjp!4v1537590704824" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <address>
+                            <strong>Mail</strong><br>
+                            <a href="mailto:mail@daruyanagi.jp">mail@daruyanagi.jp</a><br>
+                            <strong>Skype</strong><br>
+                            <a href="skype://">daruyanagi</a>
+                    </address>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h2>Address</h2>
+            
+                    <address>
+                        <strong>YANAGI Hidetoshi</strong><br>
+                        Gran-R Yamagoe 706<br>
+                        1-7-27 Yamagoe, Matshuyama City, Ehime, Japan<br>
+                        791-8013<br>
+                    </address>
+            
+                    <div style="margin-bottom: 2em;" class="google-map">          
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1656.6141014346226!2d132.75629468695251!3d33.85800927255412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354fe5bb48bb189f%3A0xfdae3f41e0b39f7f!2z44CSNzkxLTgwMTMg5oSb5aqb55yM5p2-5bGx5biC5bGx6LaK77yR5LiB55uu77yX4oiS77yS77yX!5e0!3m2!1sja!2sjp!4v1537590704824" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h2>Social</h2>
+                    <dl>
+                        <dt>twitter (Official)</dt>
+                        <dd><a href="https://twitter.com/YanagiHidetoshi">https://twitter.com/YanagiHidetoshi</a></dd>
+                        <dt>twitter (Personal)</dt>
+                        <dd><a href="https://twitter.com/daruyanagi">https://twitter.com/daruyanagi</a></dd>
+                        <dt>facebook</dt>
+                        <dd><a href="https://facebook.com/daruyanagi">https://facebook.com/daruyanagi</a></dd>
+                        <dt>github</dt>
+                        <dd><a href="https://github.com/daruyanagi">https://github.com/daruyanagi</a></dd>
+                        <dt>hatena</dt>
+                        <dd><a href="http://profile.hatena.ne.jp/daruyanagi/">http://profile.hatena.ne.jp/daruyanagi/</a></dd>
+                        <dt>amazon</dt>
+                        <dd><a href="http://amzn.asia/4Geihep">http://amzn.asia/4Geihep</a></dd>
+                    </dl>
+                </div>
+            </div>
         </div>
 
-        <footer>
+        <footer style="margin-bottom: 4em;">
             &copy; 2018 daruyanagi.
         </footer>
     </div>
-    
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
