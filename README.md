@@ -1,4 +1,4 @@
-# https://daruyanagi.jp/
+# daruyanagi.jp
 
 YANAGI Hidetoshi (a.k.a. daruyanagi) is a freelance writer for windows software.
 
